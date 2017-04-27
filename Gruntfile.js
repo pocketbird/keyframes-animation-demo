@@ -43,7 +43,8 @@ module.exports = function (grunt) {
         flatten: true,
         partials: ['<%= yeoman.app %>/_includes/**/*.hbs'],
         layoutdir: '<%= yeoman.app %>/_layouts',
-        layout: 'default.hbs'
+        layout: 'default.hbs',
+        helpers: ['./helpers/times.js']
       },
       dist: {
         files: [{

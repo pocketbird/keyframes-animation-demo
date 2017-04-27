@@ -3,6 +3,10 @@
 @import 'syntax';
 
 // Custom
+body {
+  padding-top: 50px;
+}
+
 h1 {
   position: relative;
   z-index: 1;
@@ -11,32 +15,33 @@ h1 {
   -webkit-transform: translate(0, 0);
   -webkit-transition: -webkit-transform 500ms;
   transform: translate(0, 0);
-  transition: transform 500ms;
+  transition: all 500ms;
 
   &.move {
     // keyframes animation destination
-    -webkit-transform: translate(0px, 50px);
-    transform: translate(0px, 50px);
+    -webkit-transform: translate(0px, -50px);
+    transform: translate(0px, -50px);
   }
 }
 
 table {
   margin: 0 auto;
   position: relative;
-  bottom: 80px;
-  opacity: .5;
+  bottom: 70px;
+  opacity: .1;
   z-index: 0;
 
   // keyframes animation origin
   -webkit-transform: translate(0, 0);
   -webkit-transition: -webkit-transform 500ms;
   transform: translate(0, 0);
-  transition: transform 500ms;
+  transition: all 500ms;
 
   &.move {
     // keyframes animation destination
-    -webkit-transform: translate(0px, -50px);
-    transform: translate(0px, -50px);
+    -webkit-transform: translate(0px, 50px);
+    transform: translate(0px, 50px);
+    opacity: 1;
   }
 }
 
