@@ -1,0 +1,40 @@
+{
+  "name": "animation",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "grunt"
+  },
+  "repository": "https://github.com/hcadigitalmedia/animation",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=6.9.4"
+  },
+  "dependencies": {
+    "eslint-tap": "^2.0.0",
+    "grunt": "^1.0.1",
+    "grunt-assemble": "^0.5.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-check-dependencies": "^1.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-ftpush": "^0.3.3",
+    "grunt-lesslint": "^3.2.0",
+    "grunt-newer": "^1.2.0",
+    "grunt-svgmin": "^4.0.0",
+    "grunt-uncss": "^0.6.1",
+    "jit-grunt": "^0.10.0",
+    "time-grunt": "^1.4.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-scss-lint": "^0.5.0"
+  }
+}
