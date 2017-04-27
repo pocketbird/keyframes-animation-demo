@@ -5,26 +5,23 @@ var stateCheck = setInterval(function() {
     // document ready
     console.log('dom is ready!');
 
-    animateArticles();
+    animateArticles('.js-article');
   }
 }, 100);
 
-function animateArticles() {
-  this.articles = document.querySelectorAll('.js-article');
+function animateArticles(selector) {
+  this.articles = document.querySelectorAll(selector);
 
   for (i = 0; i < articles.length; i++) {
-    new topAndBottom(articles[i]);
+    new topAndBottom(articles[i], '.js-top', '.js-bottom');
   }
 }
 
-function topAndBottom(article) {
-  this.top = article.querySelectorAll('.js-top')[0];
-  this.bottom = article.querySelectorAll('.js-bottom')[0];
+function topAndBottom(article, topSelector, bottomSelector) {
+  this.top = article.querySelectorAll(topSelector)[0];
+  this.bottom = article.querySelectorAll(bottomSelector)[0];
 
-  console.log(this.top);
-  console.log(this.bottom);
-
-  new handleClick(this.top, this.bottom);
+  handleClick(this.top, this.bottom);
 }
 
 function handleClick(top, bottom) {
