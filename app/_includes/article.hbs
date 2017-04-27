@@ -1,6 +1,14 @@
-<article class="js-article">
-  <h1 class="js-top"><span class="em em-rocket"></span> Houston, we have liftoff</h1>
-  <table class="js-bottom">
+<article class="js-container">
+  {{!-- <h1 class="top js-top">Houston, we have liftoff</h1> --}}
+
+  <select class="form-control top js-top">
+    <option value="select" selected="">Select an appointment</option>
+    <option value="cpt">An appointment and I have previously visited this provider</option>
+    <option value="phy">Annual Physical</option>
+    <option value="new">An appointment and I have not visited this provider before</option>
+  </select>
+
+  <table class="bottom js-bottom">
     <tbody>
       <tr>
         <th>4/17</th>
